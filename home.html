@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            height: 100vh;
+            display: flex;
+        }
+
+        /* Levé menu – skupiny */
+        .sidebar {
+            width: 220px;
+            background: #333;
+            color: white;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .sidebar h2 { margin-top: 0; }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .sidebar a:hover {
+            background: #444;
+        }
+
+        /* Chat */
+        .chat {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            overflow-y: auto;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+
+        /* Pravá strana – uživatelé */
+        .users {
+            width: 220px;
+            background: #eee;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .message {
+            padding: 10px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #ddd;
+            background: #fafafa;
+            border-radius: 4px;
+        }
+        .author { font-weight: bold; }
+        .time { color: gray; font-size: 12px; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+<!-- LEVÉ MENU -->
+<div class="sidebar">
+    <h2>Skupiny</h2>
+    <a href="#">PHP chat</a>
+    <a href="#">School</a>
+    <a href="#">Gaming</a>
+    <a href="#">Family</a>
+    <a href="#">Work</a>
+</div>
+
+<!-- STŘED – CHAT -->
+<div class="chat">
+    <h2>Chat: PHP chat</h2>
+
+    <div class="message">
+        <div class="author">Adam</div>
+        <div class="time">2024-02-01 10:00</div>
+        <div>Ahoj, řeší někdo PHP?</div>
+    </div>
+
+    <div class="message">
+        <div class="author">Boris</div>
+        <div class="time">2024-02-01 10:05</div>
+        <div>Jo, já tu jsem.</div>
+    </div>
+
+    <div class="message">
+        <div class="author">Cyril</div>
+        <div class="time">2024-02-01 10:06</div>
+        <div>Můžu taky pomoct.</div>
+    </div>
+</div>
+
+<!-- PRAVÉ MENU – UŽIVATELÉ -->
+<div class="users">
+    <h2>Uživatelé</h2>
+    <div>Adam</div>
+    <div>Boris</div>
+    <div>Cyril</div>
+    <div>David</div>
+    <div>Eva</div>
+    <div>…</div>
+</div>
+
+</body>
+</html>
