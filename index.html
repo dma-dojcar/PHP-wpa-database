@@ -1,21 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Chatovací aplikace</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            background: #f0f0f0;
+        }
+
+        header {
+            background: #4a76a8;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 3px #aaa;
+        }
+
+        .box h2 {
+            margin-top: 0;
+        }
+
+        .menu a {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 18px;
+            color: #4a76a8;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-<h1 style="text-align: center;color: aquamarine">Chats</h1>
-<h4>User: name</h4>
-<div style="border: 1px solid black;width: 256px;height: 400px;overflow: scroll">
-    <a>
-        <img src="https://maxwellforbes.com/assets/eleventyImgs/dXRjffixYC-256.png">
-        <h3>chat_name</h3>
-        <span>last message: ahoj karle</span>
-    </a>
+
+<header>
+    💬 Moje Chatovací Aplikace
+</header>
+
+<div class="container">
+
+    <!-- MENU -->
+    <div class="box menu">
+        <a href="#">🏠 Domů</a>
+        <a href="#">👤 Profil</a>
+        <a href="#">👥 Přátelé</a>
+        <a href="#">💬 Skupiny</a>
+        <a href="#">🔒 Odhlásit</a>
+    </div>
+
+    <!-- WELCOME BOX -->
+    <div class="box">
+        <h2>Vítej v aplikaci!</h2>
+        <p>Toto je jednoduchá chatovací aplikace. Můžeš si prohlížet skupiny, psát zprávy, zobrazovat přátele nebo editovat profil.</p>
+    </div>
+
+    <!-- GROUP LIST -->
+    <div class="box">
+        <h2>Skupiny</h2>
+        <ul>
+            <li>PHP chat</li>
+            <li>School</li>
+            <li>Gaming</li>
+            <li>Family</li>
+            <li>Work</li>
+        </ul>
+    </div>
+
+    <!-- FRIEND LIST -->
+    <div class="box">
+        <h2>Přátelé</h2>
+        <ul>
+            <li>Boris</li>
+            <li>Cyril</li>
+            <li>Jana</li>
+            <li>David</li>
+        </ul>
+    </div>
 
 </div>
 
+<footer>
+    © 2025 Moje Chatovací Aplikace
+</footer>
 
 </body>
 </html>
